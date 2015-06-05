@@ -80,7 +80,8 @@ module.exports = function(grunt) {
 			},
 			uglify: {
 				options: {
-					mangle: false
+					mangle: true,
+					preserveComments: 'some'
 				},
 				build: {
 					files:  {},

@@ -6,7 +6,7 @@
 'use strict';
 
 angular.module('myApp', [
-'ngRoute', 'ngSanitize', 'ngTouch', 'ngAnimate',		//additional angular modules
+'ngRoute', 'ngSanitize', 'ngTouch', //additional angular modules
 'dannystyleart.angular-dragster'
 ]).
 config(['$routeProvider', '$locationProvider', '$compileProvider', function($routeProvider, $locationProvider, $compileProvider) {
@@ -19,14 +19,14 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	// var staticPath ='/';
 	var staticPath;
 	// staticPath ='/angular-directives/angular-dragster/';		//local
-	staticPath ='/';		//nodejs (local)
+	staticPath ='';		//nodejs (local)
 	// staticPath ='/angular-dragster/';		//gh-pages
-	var appPathRoute ='/';
+	var appPathRoute ='http://lab.ds/dragster/';
 	var pagesPath =staticPath+'pages/';
 	
 	
-	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
+	$routeProvider.when('/home', {templateUrl: pagesPath+'home/home.html'});
 
-	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
+	$routeProvider.otherwise({redirectTo: '/home'});
 	
 }]);
