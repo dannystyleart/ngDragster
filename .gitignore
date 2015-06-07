@@ -1,6 +1,2 @@
-node_modules/
-bower_components/
-*.log
-
-build/
-dist/
+#Actually, need to track these for site to run on Github Pages..
+bower_components
