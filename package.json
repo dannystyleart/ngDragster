@@ -1,0 +1,43 @@
+{
+  "name": "ng-dragdrop",
+  "version": "1.0.0",
+  "description": "Native AngularJS HTML5 Drag and drop without jquery dependency, written in typescript",
+  "main": "dragster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannystyleart/ngDragster.git"
+  },
+  "keywords": [
+    "angular",
+    "js",
+    "drag",
+    "and",
+    "drop",
+    "native",
+    "no-jquery",
+    "typscript"
+  ],
+  "author": "Daniel Sebestyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dannystyleart/ngDragster/issues"
+  },
+  "homepage": "https://github.com/dannystyleart/ngDragster#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglifyjs": "^0.6.2"
+  }
+}
