@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     rimraf = require('gulp-rimraf'),
     ngAnnotate = require('gulp-ng-annotate'),
     replace = require('gulp-replace'),
-    injectString = require('gulp-inject-string');
+    injectString = require('gulp-inject-string'),
+    webpack = require('gulp-webpack');
 var PROJECT_PATH, AUTOPREFIXER_CONFIG, INJECT_CONFIG, TS_CONFIG, NG_ANNOTATE_CONFIG, UGLIFY_CONFIG, SASS_SETTINGS;
 /*************************************************
  * Config
@@ -64,6 +65,11 @@ gulp.task('compile:styles', function () {
 /*************************************************
  * Builders
  ************************************************/
+gulp.task('build:webpack:dev', function () {
+    return gulp.src('src/dragster.app.js')
+        .pipe(webpack(require('./webpack.config.js')))
+        .pipe(gulp.dest('src/_build'));
+});
 /*************************************************
  * Misc
  ************************************************/
