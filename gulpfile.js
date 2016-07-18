@@ -66,9 +66,9 @@ gulp.task('compile:styles', function () {
  * Builders
  ************************************************/
 gulp.task('build:webpack:dev', function () {
-    return gulp.src('src/dragster.app.js')
+    return gulp.src('src/ngDragster.module.ts')
         .pipe(webpack(require('./webpack.config.js')))
-        .pipe(gulp.dest('src/_build'));
+        .pipe(gulp.dest('_build'));
 });
 /*************************************************
  * Misc

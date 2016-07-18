@@ -27,8 +27,6 @@
         "tests"
     ],
     "devDependencies": {
-        "dt-angular": "^1.2.16",
-        "angular": "angularjs#^1.4.9",
-        "dt-jquery": "^2.0.0"
+        "angular": "angularjs#^1.5.5"
     }
 }

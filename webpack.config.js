@@ -1,15 +1,15 @@
 var webpack = require('webpack'),
     path = require('path'),
-    buildPath = path.resolve(__dirname, 'src', '_build');
+    buildPath = path.resolve(__dirname, '_build');
 
 module.exports = {
     _buildPath: buildPath,
     entry: {
-        app: './src/dragster.app.js'
+        app: './src/ngDragster.module.ts'
     },
     output: {
         filename: '[name].bundle.js',
-        publicPath: 'src/_build/',
+        publicPath: '_build/',
         path: buildPath
     },
     resolve: {
